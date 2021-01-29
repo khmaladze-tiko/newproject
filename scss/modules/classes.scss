@@ -1,0 +1,24 @@
+@import "./variable.scss";
+
+%title {
+    color : $color04;
+    font-size: $fontsize05;
+    text-align: center;
+    margin: 0 0 30px;
+}
+%container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+%flex {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+}
+%barier {
+    padding-top: $size05;
+    padding-left: $size05;
+    padding-right: $size05;
+}

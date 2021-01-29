@@ -1,0 +1,54 @@
+@import './../modules/variable.scss';
+@import './../modules/classes.scss';
+@import './../modules/mixins.scss';
+
+.main-contant {
+    .container {
+        @extend %container;
+    }
+}
+.firstline {
+    @extend %flex;
+    h2 {
+        font-size: $fontsize03;
+    }
+    .header-icon a img {
+        width: $size01;
+        height: $size01;
+        padding-left: $size01;
+    }
+    nav .navbar-ul {
+        @extend %flex;
+        li a {
+            font-size: $fontsize02;
+        }
+    }
+}
+.header-title {
+    padding-top: $size05;
+    @extend %flex;
+    align-items: center;
+    h3 {
+        @extend %title;
+    }
+    img {
+        height: 400px;
+        width: 300px;
+    }
+}
+header {
+    background-image: url(../../pic/cover.jpg);
+    @extend %barier;
+}      
+// .navbar-ul {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-wrap: wrap; }
+    .navbar-ul li {
+      padding-left: 50px;
+      font-size: 22px; }
+      .navbar-ul li a {
+        text-decoration: none;
+        color: black; }
+      
