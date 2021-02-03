@@ -11,16 +11,26 @@
     @extend %flex;
     h2 {
         font-size: $fontsize03;
+        font-weight: 900;
     }
     .header-icon a img {
         width: $size01;
         height: $size01;
-        padding-left: $size01;
+        margin-left: $size01;
     }
     nav .navbar-ul {
         @extend %flex;
+        li {
+            font-size: 20px;
+        }
         li a {
             font-size: $fontsize02;
+        }
+        a {
+            transition: all 0.05s ease 0.05s;
+        }
+        :hover {
+            background-color:rgba(255, 255, 255, 0.555);
         }
     }
 }
@@ -28,8 +38,32 @@
     padding-top: $size05;
     @extend %flex;
     align-items: center;
+    justify-content:space-evenly;
     h3 {
         @extend %title;
+    }
+    .text1 {
+        font-weight: 700;
+        letter-spacing: 8px;
+        animation: text 3s 1;
+        @keyframes text {
+           
+        }
+    }
+    .text2 {
+        font-weight: 500;
+        letter-spacing: 1px;
+        animation: text 3s 1;
+        @keyframes text {
+            
+        }
+    }
+    .button1 {
+        padding-top: 30px;
+        padding-left: 170px;
+        .button2 {
+            @extend %button;
+        }
     }
     img {
         height: 400px;
@@ -39,15 +73,22 @@
 header {
     background-image: url(../../pic/cover.jpg);
     @extend %barier;
+    background-repeat: no-repeat;
+    background-image: url(../../pic/cover.jpg);
+    background-position: center center;
+    background-size: cover;
 }      
 // .navbar-ul {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     flex-wrap: wrap; }
+//     // display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+//     // flex-wrap: wrap; }
     .navbar-ul li {
-      padding-left: 50px;
-      font-size: 22px; }
+      margin-left: 50px;
+      font-size: 22px;
+      padding: 15px;
+      border-radius: 50%;
+     }
       .navbar-ul li a {
         text-decoration: none;
         color: black; }

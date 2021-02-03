@@ -21,4 +21,12 @@
     padding-top: $size05;
     padding-left: $size05;
     padding-right: $size05;
+    padding-bottom: $size05;
+}
+%button {
+    background-color: $color04;
+    width: 217px;
+    height: 56px;
+    color: $color02;
+    font-size: $fontsize02;
 }

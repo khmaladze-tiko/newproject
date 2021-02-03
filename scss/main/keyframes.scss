@@ -1,0 +1,10 @@
+@keyframes text {
+    0% {
+       color: rgb(247, 211, 211);
+       border-bottom: 2px solid  rgb(247, 211, 211);
+    }
+    100% {
+        border-bottom: 2px solid $color04;
+        color: $color04;
+    }
+}
