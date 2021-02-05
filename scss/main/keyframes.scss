@@ -1,10 +1,4 @@
-@keyframes text {
-    0% {
-       color: rgb(247, 211, 211);
-       border-bottom: 2px solid  rgb(247, 211, 211);
-    }
-    100% {
-        border-bottom: 2px solid $color04;
-        color: $color04;
-    }
+.js--wp-10 {
+    opacity: 0;
+    animation-duration: 1s;
 }

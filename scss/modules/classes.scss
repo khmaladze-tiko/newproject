@@ -14,7 +14,6 @@
 %flex {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     flex-wrap: wrap;
 }
 %barier {
@@ -29,4 +28,23 @@
     height: 56px;
     color: $color02;
     font-size: $fontsize02;
+}
+
+
+// fonts
+
+
+%ralewayreg {
+    font-family: 'Raleway Regular';
+}
+
+%ralewaybold {
+    font-family: 'Raleway Bold';
+}
+
+%ralewaymedium {
+    font-family: 'Raleway Medium';
+}
+%ralewaythin {
+    font-family: 'Raleway Thin';
 }
