@@ -94,7 +94,7 @@ header {
 }
 .skincare-headline {
     font-size: $fontsize05;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .card-title {
@@ -109,4 +109,43 @@ header {
     padding-top: 50px;
     background-color: rgb(250, 240, 227);
 }
-
+.handcare-section {
+    padding-top: 50px;
+    background-color: rgb(250, 240, 227);
+}
+.nail-title {
+    font-size: $fontsize05;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.img-fluid {
+    width: 100%;
+    height: 450px;
+}
+.handcare-box-title {
+    font-size: $fontsize05;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.handcare-boxes {
+   @extend %flex;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.rounded-circle {
+    height: 200px;
+    width: 200px;
+}
+.handcare-text {
+    font-size: $fontsize02;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+}
+.btn-handcare {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
