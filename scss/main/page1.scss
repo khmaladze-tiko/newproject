@@ -34,7 +34,7 @@ header {
             color: $color05;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: $fontsize03;
+            font-size: $fontsize07;
             border-bottom: 3px solid transparent;
             transition: border-bottom 0.2s;
             @extend %ralewaymedium;
@@ -52,6 +52,9 @@ header {
 .ios-icons {
     max-width: 30px;
     width: 100%;
+    &:active {
+        transform: translateY(2px);
+    }
 }
 .text-box-headline {
             padding: 8px 0;
@@ -86,3 +89,24 @@ header {
     @extend %ralewaymedium;
     margin: 20px 0 0;
 }
+.skincare-section {
+    @extend %flex;
+}
+.skincare-headline {
+    font-size: $fontsize05;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.card-title {
+    font-size: $fontsize07;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.card-text {
+    padding-top: 20px;
+}
+.skincare-section-main {
+    padding-top: 50px;
+    background-color: rgb(250, 240, 227);
+}
+

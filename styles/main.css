@@ -72,7 +72,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content {
+.header-content, .skincare-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -160,7 +160,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content {
+.header-content, .skincare-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -203,7 +203,7 @@ header {
       color: #00001a;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 20px;
       border-bottom: 3px solid transparent;
       transition: border-bottom 0.2s; }
       .main-nav .main-nav-li .navbar-text:hover {
@@ -215,6 +215,8 @@ header {
 .ios-icons {
   max-width: 30px;
   width: 100%; }
+  .ios-icons:active {
+    transform: translateY(2px); }
 
 .text-box-headline {
   padding: 8px 0;
@@ -243,6 +245,23 @@ header {
 .header-content-btn {
   font-size: 24px;
   margin: 20px 0 0; }
+
+.skincare-headline {
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.card-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700; }
+
+.card-text {
+  padding-top: 20px; }
+
+.skincare-section-main {
+  padding-top: 50px;
+  background-color: #faf0e3; }
 
 .js--wp-10 {
   opacity: 0;
