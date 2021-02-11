@@ -72,7 +72,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -160,7 +160,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -301,6 +301,44 @@ header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
+
+.nailbox {
+  background-color: #e9e1d6;
+  padding-bottom: 50px; }
+
+.nailbox-title {
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.nail-pic {
+  max-width: 100%; }
+
+.style-title {
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+  border-bottom: 1px; }
+
+.style-box {
+  justify-content: space-evenly; }
+
+.style-list {
+  padding-top: 30px; }
+  .style-list p {
+    padding-top: 15px; }
+
+.d-block {
+  height: 600px; }
+
+.nail-trends {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.nail-style-sec {
+  background-color: #f1ebd4; }
 
 .js--wp-10 {
   opacity: 0;

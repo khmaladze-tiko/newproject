@@ -149,3 +149,45 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.nailbox {
+    background-color: rgb(233, 225, 214);
+    padding-bottom: 50px;
+}
+.nailbox-title {
+    font-size: $fontsize05;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.nail-pic {
+    max-width: 100%;
+}
+.style-title {
+    font-size: $fontsize07;
+    padding-top: 30px;
+    text-align: center;
+    border-bottom: 1px;
+}
+.style-box {
+    @extend %flex;
+    justify-content:space-evenly;
+}
+.style-list {
+    padding-top: 30px;
+    p {
+        padding-top: 15px;
+    }
+}
+.d-block {
+    height: 600px;
+}
+.nail-trends {
+    @extend %flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.nail-style-sec {
+    background-color: rgb(241, 235, 212);
+}
+
