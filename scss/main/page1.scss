@@ -8,7 +8,7 @@
 
 header {
     background-image: url(../pic/cover.jpg);
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -68,6 +68,7 @@ header {
 .header-content {
     @extend %flex;
     margin:70px auto;
+    padding-bottom: 80px;
     
 }
 .header-content-left {
@@ -83,6 +84,7 @@ header {
 .mask-img {
     max-width: 400px;
     width: 100%;
+    // width: 100vh;
 }
 .header-content-btn {
     font-size: $fontsize03;
@@ -190,4 +192,5 @@ header {
 .nail-style-sec {
     background-color: rgb(241, 235, 212);
 }
+
 

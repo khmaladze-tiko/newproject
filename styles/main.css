@@ -180,7 +180,7 @@ table {
 
 header {
   background-image: url(../pic/cover.jpg);
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -227,7 +227,8 @@ header {
   letter-spacing: 0.4cm; }
 
 .header-content {
-  margin: 70px auto; }
+  margin: 70px auto;
+  padding-bottom: 80px; }
 
 .header-content-left {
   margin: 100px 0 0; }
