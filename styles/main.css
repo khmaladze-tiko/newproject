@@ -72,7 +72,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -160,7 +160,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -335,11 +335,59 @@ header {
   height: 600px; }
 
 .nail-trends {
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .nail-style-sec {
   background-color: #f1ebd4; }
+
+.contact-section {
+  background-color: #e9e1d6; }
+
+.contact-title {
+  font-size: 20px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.contact-us-title {
+  font-size: 18px;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px; }
+
+.contact-form {
+  padding: 50px 200px; }
+
+.exampleFormControlInput1 {
+  padding-bottom: 10px; }
+
+.form-group {
+  padding-top: 25px; }
+
+.exampleFormControlTextarea1 {
+  padding-bottom: 10px; }
+
+.contact-btn {
+  padding-top: 10px; }
+
+.contact-icons {
+  width: 50px;
+  height: 50px;
+  max-width: 100%;
+  align-items: center; }
+
+.contact-instruction {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 50px; }
+
+.contact-us-info {
+  padding: 50px 50px;
+  justify-content: space-evenly; }
+
+.contact-us-text {
+  padding-top: 30px;
+  justify-content: center; }
 
 .js--wp-10 {
   opacity: 0;
