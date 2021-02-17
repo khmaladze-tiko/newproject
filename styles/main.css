@@ -72,18 +72,22 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
 
+.footer-contact h4 {
+  font-size: 20px;
+  font-family: 'Raleway Medium'; }
+
 .header-content-text {
   font-family: 'Raleway Regular'; }
 
-.text-box-headline {
+.text-box-headline, .footer-main-title {
   font-family: 'Raleway Bold'; }
 
-.main-nav .main-nav-li .navbar-text, .header-content-btn {
+.main-nav .main-nav-li .navbar-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -160,18 +164,22 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
 
+.footer-contact h4 {
+  font-size: 20px;
+  font-family: 'Raleway Medium'; }
+
 .header-content-text {
   font-family: 'Raleway Regular'; }
 
-.text-box-headline {
+.text-box-headline, .footer-main-title {
   font-family: 'Raleway Bold'; }
 
-.main-nav .main-nav-li .navbar-text, .header-content-btn {
+.main-nav .main-nav-li .navbar-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
 .js--wp-10 {
@@ -227,8 +235,8 @@ header {
   letter-spacing: 0.4cm; }
 
 .header-content {
-  margin: 70px auto;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  padding-top: 80px; }
 
 .header-content-left {
   margin: 100px 0 0; }
@@ -338,6 +346,9 @@ header {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.card-text2 {
+  text-align: center; }
+
 .nail-style-sec {
   background-color: #f1ebd4; }
 
@@ -373,21 +384,71 @@ header {
 .contact-icons {
   width: 50px;
   height: 50px;
-  max-width: 100%;
-  align-items: center; }
+  max-width: 100%; }
 
 .contact-instruction {
-  text-align: center;
   font-size: 18px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  text-align: center; }
 
 .contact-us-info {
   padding: 50px 50px;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  text-align: center; }
 
 .contact-us-text {
   padding-top: 30px;
   justify-content: center; }
+
+footer {
+  background-image: url(../pic/cover.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.footer-section {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.footer-nav-li {
+  text-decoration: none;
+  padding-top: 20px; }
+
+.footer-li {
+  padding-top: 15px; }
+
+.footer-nav-a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s; }
+  .footer-nav-a:hover {
+    border-bottom: 2px solid #00001a;
+    color: black; }
+
+.footer-main-title {
+  font-size: 24px;
+  padding-top: 80px;
+  color: #2d6330;
+  letter-spacing: 0.4cm; }
+
+.footer-contact-us {
+  padding-top: 20px; }
+  .footer-contact-us .contact-info {
+    padding-top: 15px; }
+
+.footer-icons {
+  padding-top: 35px; }
+
+.footer-icon {
+  padding-right: 10px;
+  max-width: 30px;
+  width: 100%; }
+  .footer-icon:active {
+    transform: translateY(2px); }
 
 .js--wp-10 {
   opacity: 0;

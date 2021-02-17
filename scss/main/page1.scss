@@ -5,7 +5,7 @@
 @import './../main/keyframes.scss';
 @import './../modules/mixins.scss';
 
-
+// header
 header {
     background-image: url(../pic/cover.jpg);
     height: 100%;
@@ -25,7 +25,6 @@ header {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
-    
     padding-left: 80px;
     .main-nav-li {
         margin-left: 40px;
@@ -67,8 +66,9 @@ header {
 }
 .header-content {
     @extend %flex;
-    margin:70px auto;
+    // margin:70px auto;
     padding-bottom: 80px;
+    padding-top: 80px;
     
 }
 .header-content-left {
@@ -189,6 +189,10 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.card-text2 {
+    text-align: center;
+    @extend %ralewaymedium;
+}
 .nail-style-sec {
     background-color: rgb(241, 235, 212);
 }
@@ -227,19 +231,80 @@ header {
     width: 50px;
     height: 50px;
     max-width: 100%;
-    align-items: center;
 }
 .contact-instruction {
-    text-align: center;
     font-size: $fontsize02;
     padding-bottom: 50px;
+    text-align: center
 }
 .contact-us-info {
     @extend %flex;
     padding: 50px 50px;
     justify-content:space-evenly;
+    text-align: center;
+    @extend %ralewaymedium;
 }
 .contact-us-text {
     padding-top: 30px;
     justify-content: center;
+}
+// footer
+footer {
+    background-image: url(../pic/cover.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer-section {
+    @extend %flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-nav-li {
+    text-decoration: none;
+    padding-top: 20px;
+}
+.footer-li {
+    padding-top: 15px;
+}
+.footer-nav-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: $fontsize01;
+    border-bottom: 3px solid transparent;
+            transition: border-bottom 0.2s;
+            @extend %ralewaymedium;
+            &:hover {
+                border-bottom: 2px solid $color05;
+                color: black;
+            }
+}
+.footer-contact h4 {
+    @extend %footer-title;
+}
+.footer-main-title {
+    font-size: $fontsize03;
+    padding-top: 80px;
+    color: $color04;
+    letter-spacing:0.4cm;
+    @extend %ralewaybold;
+}
+.footer-contact-us {
+    padding-top: 20px;
+    .contact-info {
+        padding-top: 15px;
+    }
+}
+.footer-icons {
+    padding-top: 35px;
+}
+.footer-icon {
+    padding-right: 10px;
+    max-width: 30px;
+    width: 100%;
+    &:active {
+        transform: translateY(2px);
+    }
 }
