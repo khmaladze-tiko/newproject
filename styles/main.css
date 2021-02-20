@@ -72,7 +72,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section, .containerbox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -81,13 +81,10 @@ table {
   font-size: 20px;
   font-family: 'Raleway Medium'; }
 
-.header-content-text {
-  font-family: 'Raleway Regular'; }
-
 .text-box-headline, .footer-main-title {
   font-family: 'Raleway Bold'; }
 
-.main-nav .main-nav-li .navbar-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
+.main-nav .main-nav-li .navbar-text, .header-content-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -164,7 +161,7 @@ table {
   font-style: normal;
   font-display: swap; }
 
-.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section {
+.header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section, .containerbox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -173,18 +170,34 @@ table {
   font-size: 20px;
   font-family: 'Raleway Medium'; }
 
-.header-content-text {
-  font-family: 'Raleway Regular'; }
-
 .text-box-headline, .footer-main-title {
   font-family: 'Raleway Bold'; }
 
-.main-nav .main-nav-li .navbar-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
+.main-nav .main-nav-li .navbar-text, .header-content-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
 .js--wp-10 {
   opacity: 0;
   animation-duration: 1s; }
+
+@keyframes animate {
+  100% {
+    transform: translateX(0); } }
+
+span {
+  animation: colors 4s ease infinite; }
+
+@keyframes colors {
+  0% {
+    color: #93da93; }
+  25% {
+    color: #77c577; }
+  50% {
+    color: #377e37; }
+  75% {
+    color: #2e5f2e; }
+  100% {
+    color: #184218; } }
 
 header {
   background-image: url(../pic/cover.jpg);
@@ -244,8 +257,10 @@ header {
 .header-content-text {
   font-size: 52px;
   color: #2d6330;
-  max-width: 350px;
-  width: 100%; }
+  max-width: 550px;
+  width: 100%;
+  border-left: 5px solid black;
+  padding: 10px 30px; }
 
 .mask-img {
   max-width: 400px;
@@ -352,8 +367,20 @@ header {
 .nail-style-sec {
   background-color: #f1ebd4; }
 
+.contact-us-info {
+  position: relative; }
+
 .contact-section {
   background-color: #e9e1d6; }
+
+.contact-info-boxes {
+  background-color: green;
+  height: 250px;
+  width: 300px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative; }
 
 .contact-title {
   font-size: 20px;
@@ -382,9 +409,41 @@ header {
   padding-top: 10px; }
 
 .contact-icons {
-  width: 50px;
-  height: 50px;
-  max-width: 100%; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3cbd2;
+  transition: 0.5s;
+  z-index: 1; }
+  .contact-icons:hover {
+    top: 20px;
+    right: calc(50% - 40xp);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; }
+
+.fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  transition: 0.5s; }
+  .fa:hover {
+    height: 40px;
+    width: 40px; }
+
+.content {
+  position: absolute;
+  top: 100px;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s; }
 
 .contact-instruction {
   font-size: 18px;
@@ -450,6 +509,180 @@ footer {
   .footer-icon:active {
     transform: translateY(2px); }
 
+.header-content {
+  overflow: hidden; }
+
+.header-content-text {
+  text-transform: uppercase;
+  transform: translateX(-120%);
+  animation: animate 2s ease-in-out forwards; }
+
+.header-content-btn {
+  text-transform: uppercase;
+  transform: translateX(-120%);
+  animation: animate 2s ease-in-out forwards;
+  animation-delay: .8s; }
+
+.card {
+  transition: all 0.1s ease 0.1s; }
+  .card:hover {
+    background-color: #ecc5c9;
+    transform: scale(1.1); }
+
+.containerbox {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 0px auto; }
+
+.containerbox .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: rgba(187, 127, 127, 0.699);
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px; }
+
+.containerbox .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #bb7f7f;
+  transition: 0.5s;
+  z-index: 1; }
+
+.containerbox .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; }
+
+.containerbox .box .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff; }
+
+.containerbox .box:hover .icon .fa {
+  font-size: 40px;
+  text-align: center;
+  top: 60px; }
+
+.containerbox .box .content1 {
+  position: absolute;
+  top: 100%;
+  height: calc(100% -100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+  align-items: center;
+  padding-left: 85px; }
+
+.containerbox .box .content2 {
+  position: absolute;
+  top: 100%;
+  height: calc(100% -100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+  align-items: center;
+  padding-left: 120px; }
+
+.containerbox .box .content3 {
+  position: absolute;
+  top: 100%;
+  height: calc(100% -100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+  align-items: center;
+  padding-left: 110px; }
+
+.containerbox .box:hover .content1 {
+  top: 100px;
+  opacity: 1; }
+
+.containerbox .box:hover .content2 {
+  top: 100px;
+  opacity: 1; }
+
+.containerbox .box:hover .content3 {
+  top: 100px;
+  opacity: 1; }
+
+.containerbox .box .content1 h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 40px; }
+
+.containerbox .box .content2 h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 40px; }
+
+.containerbox .box .content3 h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 40px; }
+
+.containerbox .box .content1 p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px; }
+
+.containerbox .box .content2 p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px; }
+
+.containerbox .box .content3 p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px; }
+
+.call-title {
+  padding-left: 100px; }
+
 .js--wp-10 {
   opacity: 0;
   animation-duration: 1s; }
+
+@keyframes animate {
+  100% {
+    transform: translateX(0); } }
+
+span {
+  animation: colors 4s ease infinite; }
+
+@keyframes colors {
+  0% {
+    color: #93da93; }
+  25% {
+    color: #77c577; }
+  50% {
+    color: #377e37; }
+  75% {
+    color: #2e5f2e; }
+  100% {
+    color: #184218; } }
