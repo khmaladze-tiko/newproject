@@ -744,4 +744,13 @@ span {
   .text-box-headline {
     padding-left: 50px; }
   .main-navigation {
-    justify-content: center; } }
+    justify-content: center; }
+  .home-section {
+    padding-top: 20px; }
+  .header-content {
+    justify-content: center; }
+  .card {
+    width: 200px;
+    margin-top: 30px; }
+  .nail-trends .card {
+    width: 10rem; } }
