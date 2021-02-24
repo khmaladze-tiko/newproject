@@ -278,8 +278,8 @@ header {
 .contact-us-title {
     font-size: $fontsize02;
     text-align: center;
-    padding-left: 250px;
-    padding-right: 250px;
+    // padding-left: 250px;
+    // padding-right: 250px;
 }
 .contact-form {
     padding: 50px 200px;
@@ -362,6 +362,14 @@ footer {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+.hide-title {
+    display: none;
+    font-size: $fontsize03;
+    padding-top: 80px;
+    color: $color04;
+    letter-spacing:0.2cm;
+    @extend %ralewaybold;
 }
 .footer-section {
     @extend %flex;
