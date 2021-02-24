@@ -1,0 +1,20 @@
+@media (max-width: 480px) {
+  .main-nav {
+    display: none;
+  }
+  .ul-burger {
+    display: none;
+  }
+  .burger-menu:hover .ul-burger{
+    display: block;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .text-box-headline {
+    padding-left: 50px;
+  }
+  .main-navigation {
+    justify-content: center;
+  }
+}

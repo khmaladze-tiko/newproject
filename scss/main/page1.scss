@@ -20,6 +20,62 @@ header {
     padding: 30px 0 0;
     flex-wrap: wrap;
 }
+// burger-icon
+.icon-pic {
+    height: 30px;
+    width: 40px;
+}
+.burger-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background-color: rgba(0,0,0,0.5);
+    padding-left: 10px;
+}
+.nav-burger {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.li-burger {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: $fontsize02;
+    @extend %ralewaythin;
+    background-color: rgb(248, 242, 234);
+}
+.navbar-text-burger {
+    color: $color01;
+    font-weight: 900;
+}
+.navbar-text-burger:hover {
+    border-bottom: 2px solid $color05;
+    color: $color03;
+}
+
+
+
+
+
+// home section
+.home-section {
+    background-image: url(../pic/cover.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
 
 .main-nav {
     display: flex;
@@ -412,7 +468,6 @@ footer {
     background: rgb(187, 127, 127);
     transition: 0.5s;
     z-index: 1;
-
 }
 .containerbox .box:hover .icon {
     top: 20px;

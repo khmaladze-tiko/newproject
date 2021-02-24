@@ -87,6 +87,9 @@ table {
 .main-nav .main-nav-li .navbar-text, .header-content-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
+.li-burger {
+  font-family: 'Raleway Thin'; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -176,6 +179,9 @@ table {
 .main-nav .main-nav-li .navbar-text, .header-content-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
   font-family: 'Raleway Medium'; }
 
+.li-burger {
+  font-family: 'Raleway Thin'; }
+
 .js--wp-10 {
   opacity: 0;
   animation-duration: 1s; }
@@ -211,6 +217,45 @@ header {
   justify-content: space-around;
   padding: 30px 0 0;
   flex-wrap: wrap; }
+
+.icon-pic {
+  height: 30px;
+  width: 40px; }
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding-left: 10px; }
+
+.nav-burger {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+.li-burger {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 18px;
+  background-color: #f8f2ea; }
+
+.navbar-text-burger {
+  color: black;
+  font-weight: 900; }
+
+.navbar-text-burger:hover {
+  border-bottom: 2px solid #00001a;
+  color: #474242; }
+
+.home-section {
+  background-image: url(../pic/cover.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .main-nav {
   display: flex;
@@ -686,3 +731,17 @@ span {
     color: #2e5f2e; }
   100% {
     color: #184218; } }
+
+@media (max-width: 480px) {
+  .main-nav {
+    display: none; }
+  .ul-burger {
+    display: none; }
+  .burger-menu:hover .ul-burger {
+    display: block; }
+  .burger-menu {
+    display: block; }
+  .text-box-headline {
+    padding-left: 50px; }
+  .main-navigation {
+    justify-content: center; } }
