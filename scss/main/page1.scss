@@ -40,14 +40,19 @@ header {
     height: 100%;
     background-color: white;
 }
+.ul-burger {
+    margin-top: 50px;
+   
+}
 .li-burger {
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 50px;
     font-size: $fontsize02;
     @extend %ralewaythin;
     background-color: rgb(248, 242, 234);
+    
 }
 .navbar-text-burger {
     color: $color01;
@@ -57,6 +62,68 @@ header {
     border-bottom: 2px solid $color05;
     color: $color03;
 }
+
+
+
+
+// new menu
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 15px 10px;
+    position: relative;
+    user-select: none;
+  }
+  .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+  }
+  .menu-icon .navicon:before,
+ .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.menu-icon .navicon:before {
+    top: 10px;
+  }
+  .menu-icon .navicon:after {
+    top: -10px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
 
 
 
