@@ -15,10 +15,14 @@ header {
 }
 
 .main-navigation {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0 0;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-around;
+    // padding: 30px 0 0;
+    // flex-wrap: wrap;
+    // justify-content:space-evenly;
+    @extend %flex;
+    padding-top: 30px;
+    align-items: center;
 }
 // burger-icon
 .icon-pic {
@@ -594,3 +598,23 @@ footer {
 .call-title {
     padding-left: 100px;
 }
+
+
+
+
+
+
+// new burger
+.search {
+    width: 25px;
+    height: 25px;
+}
+.person {
+    width: 25px;
+    height: 25px;
+}
+.wrapper {
+    display: none;
+}
+
+  
