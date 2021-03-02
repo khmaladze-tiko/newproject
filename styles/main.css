@@ -746,6 +746,24 @@ span {
   100% {
     color: #184218; } }
 
+.main-navigation, .header-content, .skincare-section, .handcare-boxes, .style-box, .nail-trends, .contact-us-info, .footer-section, .containerbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.footer-contact h4 {
+  font-size: 20px;
+  font-family: 'Raleway Medium'; }
+
+.text-box-headline, .hide-title, .footer-main-title {
+  font-family: 'Raleway Bold'; }
+
+.main-nav .main-nav-li .navbar-text, .header-content-text, .header-content-btn, .card-text2, .contact-us-info, .footer-nav-a {
+  font-family: 'Raleway Medium'; }
+
+.li-burger {
+  font-family: 'Raleway Thin'; }
+
 @media (max-width: 480px) {
   .home-section {
     padding-top: 20px; }
@@ -814,8 +832,9 @@ span {
     align-items: center;
     padding-top: 20px; }
   .content2 .logo a {
+    font-size: 20px;
     color: #2d6330;
-    font-size: 20px; }
+    letter-spacing: 0.2cm; }
   .wrapper nav {
     display: flex;
     max-width: calc(100%-200px);
@@ -832,7 +851,8 @@ span {
     width: 100%;
     top: 70px;
     left: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    padding: 30px 30px; }
   .content2 .links li {
     list-style: none; }
   .content2 .links li a {
@@ -840,9 +860,13 @@ span {
     font-size: 18px;
     font-weight: 500;
     padding: 9px 17px;
-    transition: all 0.3s ease; }
+    font-weight: 600;
+    font-family: Raleway Medium; }
   .content2 .links li:hover a {
-    background-color: white; }
+    display: inline-block;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 19px; }
   .wrapper {
     display: block; }
   .wrapper #show-menu:checked ~ .menu-icon2 i::before {
@@ -850,18 +874,19 @@ span {
   nav .content2 .links {
     display: block;
     position: fixed;
-    background-color: beige;
-    height: 200px;
+    background-color: rgba(247, 235, 230, 0.993);
+    height: 350px;
     width: 100%;
     top: 70px;
     left: -100%;
     margin-left: 0;
-    max-width: 300px;
+    max-width: 100%;
     transition: all 0.3s ease; }
   nav #show-menu:checked ~ .content2 .links {
     left: 0%; }
   .content2 .links li {
-    margin: 15px 20px; }
+    margin: 25px 25px;
+    text-align: center; }
   .content2 .links li a {
     font-size: 16px;
     display: block;
