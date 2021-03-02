@@ -1,22 +1,5 @@
 @media (max-width: 480px) {
-  // .main-nav {
-  //   display: none;
-  // }
-  // .ul-burger {
-  //   display: none;
-  // }
-  // .burger-menu:hover .ul-burger{
-  //   display: block;
-  // }
-  // .burger-menu {
-  //   display: block;
-  // }
-  // .text-box-headline {
-  //   padding-left: 50px;
-  // }
-  // .main-navigation {
-  //   justify-content: center;
-  // }
+ 
   .home-section{
     padding-top: 20px;
   }
@@ -160,7 +143,7 @@ nav .content2 .links{
   display: block;
   position: fixed;
   background-color: beige;
-  height: 200px;
+  height: 250px;
   width: 100%;
   top: 70px;
   left: -100%;
@@ -183,68 +166,6 @@ nav #show-menu:checked ~ .content2 .links {
 .wrapper input {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-// .wrapper {
-//   display: block;
-//   background-color: beige;
-//   width: 100%;
-// }
-// .content2 .logo a {
-//   color: $color04;
-//   font-size: 20px;
-// }
-// .wrapper nav {
-//   display: flex;
-//   max-width: calc(100%-200px);
-//   background-color: white;
-//   margin: 0 auto;
-//   height: 70px;
-//   justify-content: space-between;
-// }
-// nav .content2 {
-//   display: flex;
-//   align-items: center;
-// }
-// .content2 .links {
-//   background-color: white;
-//   height: 100%;
-//   width: 100%;
-//   top: 70px;
-//   left: 0;
-//   margin-left: 0;
-//   padding-top: 70px;
-// }
-// .content2 .links li {
-//   list-style: none;
-// }
-// .content2 .links li a {
-//   color: black;
-//   font-size: $fontsize02;
-//   font-weight: 500;
-//   padding: 9px 17px;
-//   transition: all 0.3s ease;
-// }
-// .content2 .links li:hover a{
-//   background-color: $color02;
-// }
-
-
-
-
-
-
-
-
-
 
 
 
