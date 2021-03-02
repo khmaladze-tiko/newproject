@@ -881,7 +881,8 @@ span {
     left: -100%;
     margin-left: 0;
     max-width: 100%;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    box-shadow: -10px 0px 10px 0px; }
   nav #show-menu:checked ~ .content2 .links {
     left: 0%; }
   .content2 .links li {
